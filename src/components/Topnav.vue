@@ -14,7 +14,7 @@
 </script>
 <style lang="scss" scoped>
     .topnav {
-        background: pink;
+        background: #eec8cf;
         display: flex;
         padding: 16px;
         > .logo {
