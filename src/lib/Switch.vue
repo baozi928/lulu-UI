@@ -1,6 +1,6 @@
 <template>
     <button class="gulu-switch" @click="toggle" :class="{'gulu-checked':value}">
-        <span></span>
+        <span class="pan"></span>
     </button>
 </template>
 <script lang="ts">
@@ -32,7 +32,7 @@
         border-radius: $h/2;
         position: relative;
 
-        > span {
+        > .pan {
             position: absolute;
             top: 2px;
             left: 2px;
