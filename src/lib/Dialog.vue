@@ -1,22 +1,23 @@
 <template>
     <template v-if="visible">
-        <div class="lulu-dialog-overlay"></div>
-        <div class="lulu-dialog-wrapper">
-            <div class="lulu-dialog">
-                <header>
-                    标题
-                    <span class="lulu-dialog-close"></span>
-                </header>
-                <main>
-                    <p>第一行字</p>
-                    <p>第二行字</p>
-                </main>
-                <footer>
-                    <Button level="main">OK</Button>
-                    <Button>Cancel</Button>
-                </footer>
-            </div>
+        <Teleport to="body">
+            <div class="lulu-dialog-overlay" @click="onClickOverlay"></div>
+            <div class="lulu-dialog-wrapper">
+                <div class="lulu-dialog">
+                    <header>
+                        <slot name="title" />
+                        <span @click="close" class="lulu-dialog-close"></span>
+                    </header>
+                    <main>
+                        <slot name="content" />
+                    </main>
+                    <footer>
+                        <Button level="main" @click="ok">OK</Button>
+                        <Button @click="cancel">Cancel</Button>
+                    </footer>
+                </div>
         </div>
+        </Teleport>
 </template>
 </template>
 
@@ -29,8 +30,43 @@
                 default: false
             }
         },
+        closeOnClickOverlay: {
+            type: Boolean,
+            default: true
+        },
+        ok: {
+            type: Function
+        },
+        cancel: {
+            type: Function
+        },
         components: {
             Button
+        },
+        setup(props, context) {
+            const close = () => {
+                context.emit('update:visible', false)
+            }
+            const onClickOverlay = () => {
+                if (props.closeOnClickOverlay) {
+                    close()
+                }
+            }
+            const ok = () => {
+                if (props.ok?.() !== false) {
+                    close()
+                }
+            }
+            const cancel = () => {
+                props.cancel?.()
+                close()
+            }
+            return {
+                close,
+                onClickOverlay,
+                ok,
+                cancel
+            }
         }
     }
 </script>
