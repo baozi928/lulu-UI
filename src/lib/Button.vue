@@ -1,6 +1,6 @@
 <template>
-    <button class="gulu-button" :class="classes"  :disabled="disabled">
-        <span v-if="loading" class="gulu-loadingIndicator"></span>
+    <button class="lulu-button" :class="classes"  :disabled="disabled">
+        <span v-if="loading" class="lulu-loadingIndicator"></span>
         <slot/>
     </button>
 </template>
@@ -35,9 +35,9 @@
             const {theme, size,level} = props;
             const classes = computed(() => {
                 return {
-                    [`gulu-theme-${theme}`]: theme,
-                    [`gulu-size-${size}`]: size,
-                    [`gulu-level-${level}`]: level,
+                    [`lulu-theme-${theme}`]: theme,
+                    [`lulu-size-${size}`]: size,
+                    [`lulu-level-${level}`]: level,
                 };
             });
             return {classes};
@@ -52,7 +52,7 @@
     $radius: 4px;
     $red: red;
     $grey: grey;
-    .gulu-button {
+    .lulu-button {
         box-sizing: border-box;
         height: $h;
         padding: 0 12px;
@@ -85,7 +85,7 @@
             border: 0;
         }
 
-        &.gulu-theme-link {
+        &.lulu-theme-link {
             border-color: transparent;
             box-shadow: none;
             color: $blue;
@@ -96,7 +96,7 @@
             }
         }
 
-        &.gulu-theme-text {
+        &.lulu-theme-text {
             border-color: transparent;
             box-shadow: none;
             color: inherit;
@@ -107,19 +107,19 @@
             }
         }
 
-        &.gulu-size-big {
+        &.lulu-size-big {
             font-size: 24px;
             height: 48px;
             padding: 0 16px;
         }
 
-        &.gulu-size-small {
+        &.lulu-size-small {
             font-size: 12px;
             height: 20px;
             padding: 0 4px;
         }
-        &.gulu-theme-button {
-            &.gulu-level-main {
+        &.lulu-theme-button {
+            &.lulu-level-main {
                 background: $blue;
                 color: white;
                 border-color: $blue;
@@ -129,7 +129,7 @@
                     border-color: darken($blue, 10%);
                 }
             }
-            &.gulu-level-danger {
+            &.lulu-level-danger {
                 background: $red;
                 border-color: $red;
                 color: white;
@@ -140,8 +140,8 @@
                 }
             }
         }
-        &.gulu-theme-link {
-            &.gulu-level-danger {
+        &.lulu-theme-link {
+            &.lulu-level-danger {
                 color: $red;
                 &:hover,
                 &:focus {
@@ -149,15 +149,15 @@
                 }
             }
         }
-        &.gulu-theme-text {
-            &.gulu-level-main {
+        &.lulu-theme-text {
+            &.lulu-level-main {
                 color: $blue;
                 &:hover,
                 &:focus {
                     color: darken($blue, 10%);
                 }
             }
-            &.gulu-level-danger {
+            &.lulu-level-danger {
                 color: $red;
                 &:hover,
                 &:focus {
@@ -165,7 +165,7 @@
                 }
             }
         }
-        &.gulu-theme-button {
+        &.lulu-theme-button {
             &[disabled] {
                 cursor: not-allowed;
                 color: $grey;
@@ -174,13 +174,13 @@
                 }
             }
         }
-        &.gulu-theme-link, &.gulu-theme-text {
+        &.lulu-theme-link, &.lulu-theme-text {
             &[disabled] {
                 cursor: not-allowed;
                 color: $grey;
             }
         }
-        > .gulu-loadingIndicator{
+        > .lulu-loadingIndicator{
             width: 14px;
             height: 14px;
             display: inline-block;
@@ -189,10 +189,10 @@
             border-color: $blue $blue $blue transparent;
             border-style: solid;
             border-width: 2px;
-            animation: gulu-spin 1s infinite linear;
+            animation: lulu-spin 1s infinite linear;
         }
     }
-    @keyframes gulu-spin {
+    @keyframes lulu-spin {
         0%{transform: rotate(0deg)}
         100%{transform: rotate(360deg)}
     }

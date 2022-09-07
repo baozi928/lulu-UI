@@ -1,11 +1,11 @@
 <template>
     <template v-if="visible">
-        <div class="gulu-dialog-overlay"></div>
-        <div class="gulu-dialog-wrapper">
-            <div class="gulu-dialog">
+        <div class="lulu-dialog-overlay"></div>
+        <div class="lulu-dialog-wrapper">
+            <div class="lulu-dialog">
                 <header>
                     标题
-                    <span class="gulu-dialog-close"></span>
+                    <span class="lulu-dialog-close"></span>
                 </header>
                 <main>
                     <p>第一行字</p>
@@ -38,7 +38,7 @@
 <style lang="scss">
     $radius: 4px;
     $border-color: #d9d9d9;
-    .gulu-dialog {
+    .lulu-dialog {
         background: white;
         border-radius: $radius;
         box-shadow: 0 0 3px fade_out(black, 0.5);

@@ -1,4 +1,4 @@
-import "./lib/gulu.scss";
+import "./lib/lulu.scss";
 import "./index.scss";
 import { createApp } from "vue";
 import App from "./App.vue";
