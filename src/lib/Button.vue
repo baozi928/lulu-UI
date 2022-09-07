@@ -60,7 +60,7 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        white-space: nowrap;
+        white-space: nowrap;//连续的空白符会被合并。但文本内的换行无效。
         background: white;
         color: $color;
         border: 1px solid $border-color;
