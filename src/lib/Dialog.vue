@@ -28,17 +28,17 @@
             visible: {
                 type: Boolean,
                 default: false
-            }
-        },
-        closeOnClickOverlay: {
-            type: Boolean,
-            default: true
-        },
-        ok: {
-            type: Function
-        },
-        cancel: {
-            type: Function
+            },
+            closeOnClickOverlay: {
+                type: Boolean,
+                default: true
+            },
+            ok: {
+                type: Function
+            },
+            cancel: {
+                type: Function
+            },
         },
         components: {
             Button
