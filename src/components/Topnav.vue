@@ -22,7 +22,6 @@
 </script>
 <style lang="scss" scoped>
     .topnav {
-        background: #eec8cf;
         display: flex;
         padding: 16px;
         position: fixed;
