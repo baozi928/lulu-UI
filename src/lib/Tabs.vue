@@ -5,7 +5,7 @@
         </div>
         <div class="lulu-tabs-content">
             {{current}}
-            <component class="lulu-tabs-content-item" :is="current" />
+            <component class="lulu-tabs-content-item" :class="{selected: c.props.title === selected }" v-for="c in defaults" :is="c" />
     </div>
     </div>
 </template>
@@ -72,6 +72,12 @@
         }
         &-content {
             padding: 8px 0;
+            &-item {
+                display: none;
+                &.selected {
+                    display: block;
+                }
+            }
         }
     }
 </style>
