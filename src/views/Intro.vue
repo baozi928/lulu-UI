@@ -1,5 +1,5 @@
 <template>
-    <article>
+    <article class="markdown-body">
         <h1>介绍</h1>
         <p>路鹿 UI 是一款基于 Vue 3 和 TypeScript 的 UI 组件库。</p>
         <p>这款组件库其实是在学习Vue 3 和 TypeScript 的时候写的，以一些UI组件库网站为参考，结合了我自己的思考，全程亲手编写，尽量不采用第三方库，包括目前所展现的这个官网也几乎都是我自己写的。</p>
