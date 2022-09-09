@@ -19,7 +19,7 @@
             Tab
         },
         setup() {
-            const x = ref('导航导航导航2')
+            const x = ref('导航1')
             return {
                 x
             }

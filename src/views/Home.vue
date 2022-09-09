@@ -10,9 +10,21 @@
             </p>
         </div>
     </div>
+    <div class="features">
+        <svg class="icon">
+            <use xlink:href="#icon-Vue"></use>
+        </svg>
+        <svg class="icon">
+            <use xlink:href="#icon-typescript"></use>
+        </svg>
+        <svg class="icon">
+            <use xlink:href="#icon-linggan"></use>
+        </svg>
+    </div>
 </template>
 
 <script lang="ts">
+
     import Topnav from '../components/Topnav.vue'
     export default {
         components: {Topnav}
@@ -20,12 +32,22 @@
 </script>
 
 <style lang="scss" scoped>
+    $green: #5ca9ba;
+    $border-radius: 4px;
+    $color: #44b1ac;
     .topnavAndBanner {
         background: linear-gradient(145deg, rgba(195,241,236,1) 0%, rgba(253,221,252,1) 100%);
         clip-path: ellipse(70% 60% at 50% 40%);
 
     }
+    .features {
+        >svg {
+            width: 64px;
+            height: 64px;
+        }
+    }
     .banner {
+        color: $color;
         padding: 100px 0;
         display: flex;
         justify-content: center;
@@ -35,13 +57,14 @@
             padding: 8px 0;
             a {
                 margin:0 8px;
-                background: #fff;
+                background: $green;
+                color: white;
                 display: inline-block;
-                $h: 28px;
-                height: $h;
-                line-height: $h;
-                border-radius: $h/2;
-                padding: 0 8px;
+                padding: 8px 24px;
+                border-radius: $border-radius;
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
     }
