@@ -1,9 +1,15 @@
 <template>
-    <article class="markdown-body">
-        <h1>介绍</h1>
-        <p>路鹿 UI 是一款基于 Vue 3 和 TypeScript 的 UI 组件库。</p>
-        <p>这款组件库其实是在学习Vue 3 和 TypeScript 的时候写的，以一些UI组件库网站为参考，结合了我自己的思考，全程亲手编写，尽量不采用第三方库，包括目前所展现的这个官网也几乎都是我自己写的。</p>
-        <p>它的模块比较简洁，但是用到的东西很多，对于新人而言这个库还是值得一看的，并且，在实际工作中也有一定的实用性，可以对本站中的组件进行引用。源代码放在了 https://github.com/baozi928/lulu-UI中，历史提交信息非常规范，你可以按提交的顺序逐个查看；你也可以直接查看每个组件的源代码和示例，运行方法见 README.md。</p>
-        下一节：<a href="#/doc/install">安装</a>
+    <article class="markdown-body" v-html="md">
     </article>
 </template>
+
+<script>
+    import md from '../markdown/intro.md';
+    export default {
+        data() {
+            return {
+                md
+            }
+        }
+    }
+</script>
