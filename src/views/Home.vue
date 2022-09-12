@@ -79,7 +79,6 @@
             flex-wrap: wrap;
 
             > li {
-                width: 400px;
                 margin: 16px 0;
                 display: grid;
                 justify-content: start;
