@@ -1,20 +1,108 @@
 {
-  "name": "lulu-ui-1",
-  "version": "0.0.0",
+  "name": "lulu-uinpm",
+  "version": "0.0.1",
+  "files": [
+    "dist/lib/*"
+  ],
+  "main": "dist/lib/lulu.js",
+  "module": "dist/lib/lulu.esm.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
   },
-  "dependencies": {
-    "github-markdown-css": "^4.0.0",
-    "marked": "^1.1.1",
-    "prismjs": "^1.21.0",
-    "vue": "^3.0.4",
-    "vue-router": "4.0.0-beta.3"
+  "resolutions": {
+    "node-sass": "npm:sass@latest"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.4",
-    "sass": "^1.26.10",
-    "vite": "^1.0.0-rc.13"
-  }
+    "@vitejs/plugin-vue": "3.0.3",
+    "rollup-plugin-esbuild": "4.9.3",
+    "rollup-plugin-scss": "3.0.0",
+    "rollup-plugin-terser": "7.0.2",
+    "sass": "1.54.5",
+    "vite": "3.0.9",
+    "marked": "1.1.1",
+    "vue": "3.2.37",
+    "vue-router": "4",
+    "prismjs": "1.21.0",
+    "github-markdown-css": "4.0.0"
+  },
+  "peerDependencies": {
+    "vue": "3.2.37",
+    "github-markdown-css": "4.0.0"
+  },
+  "dependencies": {
+    "buffer-from": "^1.1.2",
+    "ansi-styles": "^3.2.1",
+    "binary-extensions": "^2.2.0",
+    "braces": "^3.0.2",
+    "acorn": "^8.8.0",
+    "anymatch": "^3.1.2",
+    "clipboard": "^2.0.11",
+    "color-name": "^1.1.3",
+    "csstype": "^2.6.20",
+    "color-convert": "^1.9.3",
+    "es-module-lexer": "^0.9.3",
+    "chalk": "^2.4.2",
+    "delegate": "^3.2.0",
+    "debug": "^4.3.4",
+    "escape-string-regexp": "^1.0.5",
+    "function-bind": "^1.1.1",
+    "esbuild": "^0.14.54",
+    "esbuild-windows-64": "^0.14.54",
+    "estree-walker": "^2.0.2",
+    "has": "^1.0.3",
+    "is-core-module": "^2.10.0",
+    "good-listener": "^1.2.2",
+    "has-flag": "^4.0.0",
+    "immutable": "^4.1.0",
+    "commander": "^2.20.3",
+    "chokidar": "^3.5.3",
+    "jest-worker": "^26.6.2",
+    "glob-parent": "^5.1.2",
+    "fill-range": "^7.0.1",
+    "merge-stream": "^2.0.0",
+    "joycon": "^3.1.1",
+    "is-binary-path": "^2.1.0",
+    "jsonc-parser": "^3.2.0",
+    "js-tokens": "^4.0.0",
+    "ms": "^2.1.2",
+    "magic-string": "^0.25.9",
+    "is-number": "^7.0.0",
+    "nanoid": "^3.3.4",
+    "picomatch": "^2.3.1",
+    "picocolors": "^1.0.0",
+    "randombytes": "^2.1.0",
+    "postcss": "^8.4.16",
+    "resolve": "^1.22.1",
+    "is-glob": "^4.0.3",
+    "path-parse": "^1.0.7",
+    "is-extglob": "^2.1.1",
+    "select": "^1.1.2",
+    "rollup": "^2.77.3",
+    "source-map": "^0.6.1",
+    "rollup-pluginutils": "^2.8.2",
+    "serialize-javascript": "^4.0.0",
+    "source-map-js": "^1.0.2",
+    "normalize-path": "^3.0.0",
+    "sourcemap-codec": "^1.4.8",
+    "supports-color": "^7.2.0",
+    "source-map-support": "^0.5.21",
+    "tiny-emitter": "^2.1.0",
+    "terser": "^5.15.0",
+    "safe-buffer": "^5.2.1",
+    "readdirp": "^3.6.0",
+    "supports-preserve-symlinks-flag": "^1.0.0",
+    "to-regex-range": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baozi928/lulu-UI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baozi928/lulu-UI/issues"
+  },
+  "homepage": "https://github.com/baozi928/lulu-UI#readme",
+  "description": ""
 }

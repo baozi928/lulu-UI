@@ -8,3 +8,4 @@ git branch -M master &&
 git remote add origin git@github.com:baozi928/lulu-UI-website.git &&
 git push -f -u origin master &&
 cd -
+echo https://baozi928.github.io/lulu-UI-website/

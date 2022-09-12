@@ -1,4 +1,3 @@
-@@ -0,0 +1,18 @@
 <demo>
     支持显示加载中
 </demo>
@@ -10,7 +9,9 @@
 </template>
 
 <script lang="ts">
-    import Button from "../lib/Button.vue";
+    import {
+        Button
+    } from "../lib/index";
     export default {
         components: {
             Button
