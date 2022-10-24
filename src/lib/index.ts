@@ -6,4 +6,6 @@ export { default as Dialog } from './Dialog.vue';
 export { default as Progress } from './Progress.vue';
 export { default as Tooltip} from './Tooltip.vue';
 export { default as Steps} from './Steps.vue';
+export { default as Popover} from './Popover.vue';
+export { default as DatePicker} from './DatePicker.vue';
 export { openDialog as openDialog } from './openDialog';
