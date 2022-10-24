@@ -1,9 +1,9 @@
 <demo>
-    Progress示例
+    普通进度条
 </demo>
 <template>
     <div class="g-container">
-        <div class="g-progress"></div>
+        <div class="g-progress" ></div>
     </div>
 
 </template>
@@ -14,12 +14,13 @@
     }
 </script>
 
-<style>
+<style scoped>
     .g-container {
         width: 240px;
         height: 25px;
         border-radius: 25px;
-        background: #eee;
+        background: #eeeeee;
+        display: flex;
     }
     .g-progress {
         width: 50%;

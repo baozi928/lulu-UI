@@ -1,26 +1,54 @@
 <template>
-    <div class="g-container">
-        <div class="g-progress"></div>
+    <div class="progress-circle">
+        <svg :width="size" :height="size" viewBox="0 0 100 100">
+            <circle r="50"  cx="50" cy="50" fill="transparent" class="progress-background"></circle>
+            <circle r="50" cx="50" cy="50" fill="transparent" class="progress-bar" :stroke-dasharray="dashArray" :stroke-dashoffset="dashOffset"></circle>
+        </svg>
     </div>
 </template>
 
-<script lang="ts">
+<script>
     export default {
-        name: 'Progress'
+        props:{
+            size:{
+                type:Number,
+                default:100
+            },
+            percent:{
+                type:Number,
+                default:0.5
+            }
+        },
+        data(){
+            return{
+                dashArray:Math.PI * 2 * 50
+            }
+        },
+        computed:{
+            dashOffset(){
+                return(1-this.percent) * this.dashArray
+            }
+        }
     }
 </script>
 
-<style>
-    .g-container {
-        width: 240px;
-        height: 25px;
-        border-radius: 25px;
-        background: #eee;
+<style scoped>
+    svg{
+        position: relative;
     }
-    .g-progress {
-        width: 50%;
-        height: inherit;
-        border-radius: 25px 0 0 25px;
-        background: #72bcd5;
+    circle {
+        stroke-width: 10px;
+        transform-origin: center;
+        transform-origin: center;
+        transform:scale(0.9);
+    }
+
+    .progress-background{
+        stroke: rgb(238, 238, 238);
+        transform:scale(0.9);
+    }
+    .progress-bar{
+        stroke:rgba(114, 188, 213,1);
+        transform: rotate(-90deg) scale(0.9);
     }
 </style>
