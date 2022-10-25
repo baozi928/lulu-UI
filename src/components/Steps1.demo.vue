@@ -1,20 +1,17 @@
 <demo>
-    常规用法
+    空着
 </demo>
 <template>
-    <div>先空着</div>
+    <Steps/>
 </template>
-
-<script lang="ts">
+<script>
     import {
         Steps
     } from '../lib/index'
-    import {
-        ref
-    } from 'vue'
     export default {
-        components: {
+        components:{
             Steps,
         },
     }
 </script>
+

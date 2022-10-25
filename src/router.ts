@@ -13,7 +13,7 @@ import install from './markdown/install.md'
 import ProgressDemo from './components/ProgressDemo.vue'
 import TooltipDemo from './components/TooltipDemo.vue'
 import StepsDemo from './components/StepsDemo.vue'
-import PopoverDemo from './components/PopoverDemo.vue'
+import BreadcrumbDemo from './components/BreadcrumbDemo.vue'
 import DatePickerDemo from './components/DatePickerDemo.vue'
 
 const history = createWebHashHistory();
@@ -37,7 +37,7 @@ export const router = createRouter({
                 { path: "progress", component: ProgressDemo },
                 { path: "tooltip", component: TooltipDemo },
                 { path: "steps", component: StepsDemo },
-                { path: "popover", component: PopoverDemo },
+                { path: "breadcrumb", component: BreadcrumbDemo },
                 { path: "datePicker", component: DatePickerDemo },
 
             ],
