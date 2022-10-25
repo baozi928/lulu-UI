@@ -2,21 +2,31 @@
     常规提示框
 </demo>
 <template>
-    <div>
-    <div class="tooltip">鼠标移动到这里
+    <Tooltip>
         <span class="tooltiptext-right">右边提示文本</span>
-    </div>
-    <div class="tooltip">鼠标移动到这里
+    </Tooltip>
+    <Tooltip>
         <span class="tooltiptext-left">左边提示文本</span>
-    </div>
-    <div class="tooltip">鼠标移动到这里
+    </Tooltip>
+    <Tooltip>
         <span class="tooltiptext-up">上方提示文本</span>
-    </div>
-    <div class="tooltip">鼠标移动到这里
+    </Tooltip>
+    <Tooltip>
         <span class="tooltiptext-down">下方提示文本</span>
-    </div>
-    </div>
+    </Tooltip>
 </template>
+
+<script>
+    import {
+        Tooltip
+    } from "../lib/index";
+    export default {
+        components: {
+            Tooltip
+        }
+    }
+
+</script>
 
 <style scoped>
     @import "helper/Tooltip2.css";
