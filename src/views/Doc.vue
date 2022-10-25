@@ -43,7 +43,7 @@
                         <router-link to="/doc/breadcrumb">Breadcrumb 组件</router-link>
                     </li>
                     <li>
-                        <router-link to="/doc/datepicker">Datepicker 组件</router-link>
+                        <router-link to="/doc/pagination">Pagination 组件</router-link>
                     </li>
                 </ol>
             </aside>

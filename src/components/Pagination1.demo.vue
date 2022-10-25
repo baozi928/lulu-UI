@@ -2,19 +2,19 @@
     常规用法
 </demo>
 <template>
-    <div>先空着</div>
+    <Pagination/>
 </template>
 
 <script lang="ts">
     import {
-        DatePicker
+        Pagination
     } from '../lib/index'
     import {
         ref
     } from 'vue'
     export default {
         components: {
-            DatePicker,
+            Pagination,
         },
     }
 </script>

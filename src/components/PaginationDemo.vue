@@ -1,13 +1,13 @@
 <template>
     <h1>Datepicker 示例</h1>
-    <Demo :component="DatePicker1Demo" />
-    <Demo :component="DatePicker2Demo"/>
+    <Demo :component="Pagination1Demo" />
+    <Demo :component="Pagination2Demo"/>
 </template>
 
 <script lang="ts">
     import Demo from './Demo.vue'
-    import DatePicker1Demo from './DatePicker1.demo.vue'
-    import DatePicker2Demo from './DatePicker2.demo.vue'
+    import Pagination1Demo from './Pagination1.demo.vue'
+    import Pagination2Demo from './Pagination2.demo.vue'
     import {
         ref
     } from 'vue'
@@ -17,8 +17,8 @@
         },
         setup() {
             return {
-                DatePicker1Demo,
-                DatePicker2Demo
+                Pagination1Demo,
+                Pagination2Demo
             }
         }
     }

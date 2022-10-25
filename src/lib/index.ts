@@ -9,5 +9,5 @@ export { default as Steps} from './Steps.vue';
 export { default as Step} from './Step.vue';
 export { default as BreadItem} from './BreadItem.vue';
 export { default as Breadcrumb} from './Breadcrumb.vue';
-export { default as DatePicker} from './DatePicker.vue';
+export { default as Pagination} from './Pagination.vue';
 export { openDialog as openDialog } from './openDialog';

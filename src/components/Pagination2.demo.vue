@@ -7,14 +7,14 @@
 
 <script lang="ts">
     import {
-        DatePicker
+        Pagination
     } from '../lib/index'
     import {
         ref
     } from 'vue'
     export default {
         components: {
-            DatePicker,
+            Pagination,
         },
     }
 </script>

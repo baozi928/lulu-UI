@@ -14,7 +14,7 @@ import ProgressDemo from './components/ProgressDemo.vue'
 import TooltipDemo from './components/TooltipDemo.vue'
 import StepsDemo from './components/StepsDemo.vue'
 import BreadcrumbDemo from './components/BreadcrumbDemo.vue'
-import DatePickerDemo from './components/DatePickerDemo.vue'
+import PaginationDemo from './components/PaginationDemo.vue'
 
 const history = createWebHashHistory();
 const md = string => h(Markdown, { content: string, key: string })
@@ -38,8 +38,7 @@ export const router = createRouter({
                 { path: "tooltip", component: TooltipDemo },
                 { path: "steps", component: StepsDemo },
                 { path: "breadcrumb", component: BreadcrumbDemo },
-                { path: "datePicker", component: DatePickerDemo },
-
+                { path: "pagination", component: PaginationDemo },
             ],
 
         },
