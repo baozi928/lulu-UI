@@ -1,8 +1,8 @@
 <template>
     <div>
         <h1>Tooltip 组件示例 </h1>
-        <Demo :component="Tooltip1Demo" />
         <Demo :component="Tooltip2Demo" />
+        <Demo :component="Tooltip1Demo" />
     </div>
 </template>
 
