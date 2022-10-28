@@ -1,7 +1,7 @@
 <template>
     <h1>Datepicker 示例</h1>
     <Demo :component="Pagination1Demo" />
-    <Demo :component="Pagination2Demo"/>
+<!--    <Demo :component="Pagination2Demo"/>-->
 </template>
 
 <script lang="ts">

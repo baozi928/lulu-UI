@@ -1,6 +1,6 @@
 <demo>
-    空着
-</demo>
+    常规示例
+<>
 <template>
     <Steps/>
 </template>
