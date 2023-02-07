@@ -1,7 +1,7 @@
 <template>
     <h1>Steps 示例</h1>
     <Demo :component="Steps1Demo" />
-<!--    <Demo :component="Steps2Demo"/>-->
+   <Demo :component="Steps2Demo"/>
 </template>
 
 <script lang="ts">

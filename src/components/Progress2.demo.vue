@@ -1,8 +1,8 @@
 <demo>
-    环形进度条
+    100%进度条
 </demo>
 <template>
- <Progress :size="150" :percent="0.5"/>
+  <Progress progress="100"/>
 </template>
 
 <script>
