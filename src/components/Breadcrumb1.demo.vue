@@ -1,21 +1,17 @@
 <demo>
-    横向
+    示例
 </demo>
 <template>
  <Breadcrumb class="container" >
      <BreadItem to="/"> 首页  </BreadItem>
-     <span >></span>
-     <BreadItem to="/intro"> 介绍  </BreadItem>
-     <span >></span>
-     <BreadItem to="/install"> 安装 </BreadItem>
-     <span >></span>
+     <BreadItem to="/doc/intro"> 介绍  </BreadItem>
+     <BreadItem to="/doc/install"> 安装 </BreadItem>
      <BreadItem to="/doc/switch"> Switch组件 </BreadItem>
-     <span >></span>
      <BreadItem to="/doc/button"> Button组件 </BreadItem>
-     <span >></span>
      <BreadItem to="/doc/dialog"> Dialog组件 </BreadItem>
-     <span >></span>
      <BreadItem to="/doc/tabs"> Tabs组件 </BreadItem>
+     <BreadItem to="/doc/progress"> Progress组件 </BreadItem>
+     <BreadItem to="/doc/breadcrumb"> Breadcrumb组件 </BreadItem>
  </Breadcrumb>
 </template>
 
@@ -29,9 +25,4 @@
     }
 
 </script>
-<style lang="scss" scoped>
-    .container {
-        display: flex;
-    }
 
-</style>

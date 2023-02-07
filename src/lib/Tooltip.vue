@@ -1,5 +1,5 @@
 <template>
-    <div class="tooltip">鼠标移动到这里
+    <div class="tooltip" :class="classes">鼠标移动到这里
         <slot></slot>
     </div>
 </template>

@@ -1,15 +1,13 @@
 <template>
-    <div class="BreadItem">
-        <template v-if="to">
-            <router-link :to="to" >
-                <slot></slot>
-            </router-link>
-        </template>
-        <template v-else>
-            <slot></slot>
-        </template>
+    <div class="lulu-bread-item">
+      <RouterLink v-if="to" :to="to">
+        <slot />
+      </RouterLink>
+      <span v-else>
+        <slot />
+      </span>
     </div>
-</template>
+  </template>
 
 <script>
     export default {
@@ -24,7 +22,7 @@
 
 <style>
     a:hover{
-        text-decoration: none;
+        text-decoration:none;
         color: #69aad9;
     }
 </style>
