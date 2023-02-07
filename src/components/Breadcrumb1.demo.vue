@@ -17,12 +17,15 @@
 
 
 <script>
-    import {
-        BreadItem,Breadcrumb
-    } from "../lib/index";
-    export default {
-        components: { BreadItem, Breadcrumb },
-    }
-
+import BreadItem from '../lib/BreadItem.vue'
+import Breadcrumb from '../lib/Breadcrumb.vue'
+export default {
+  components: { BreadItem, Breadcrumb },
+}
 </script>
-
+<style lang="scss" scoped>
+h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+</style>

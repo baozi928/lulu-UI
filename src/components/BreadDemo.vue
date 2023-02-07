@@ -1,24 +1,19 @@
 <template>
-    <h1>Breadcrumb 示例</h1>
+  <div>
+    <h1>Bread 组件示例</h1>
     <Demo :component="Breadcrumb1Demo" />
+  </div>
 </template>
 
-<script lang="ts">
-    import Demo from './Demo.vue'
-    import Breadcrumb1Demo from './Breadcrumb1.demo.vue'
-    import {
-        ref
-    } from 'vue'
-    export default {
-        components: {
-            Demo
-        },
-        setup() {
-            return {
-                Breadcrumb1Demo,
-            }
-        }
-    }
+<script lang='ts'>
+import Breadcrumb1Demo from './Breadcrumb1.demo.vue'
+import Demo from './Demo.vue'
+export default {
+  components: { Demo },
+  setup() {
+    return { Breadcrumb1Demo }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
