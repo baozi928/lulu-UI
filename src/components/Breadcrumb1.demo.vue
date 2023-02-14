@@ -11,7 +11,9 @@
      <BreadItem to="/doc/dialog"> Dialog组件 </BreadItem>
      <BreadItem to="/doc/tabs"> Tabs组件 </BreadItem>
      <BreadItem to="/doc/progress"> Progress组件 </BreadItem>
+     <BreadItem to="/doc/Tooltip"> Tooltip组件 </BreadItem>
      <BreadItem to="/doc/breadcrumb"> Breadcrumb组件 </BreadItem>
+     <BreadItem to="/doc/Pagination"> Pagination组件 </BreadItem>
  </Breadcrumb>
 </template>
 

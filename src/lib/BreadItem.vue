@@ -1,4 +1,3 @@
-
 <template>
   <div class="lulu-bread-item">
     <RouterLink v-if="to" :to="to">

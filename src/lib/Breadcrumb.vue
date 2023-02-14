@@ -16,14 +16,14 @@ export default {
     // 4. 遍历插槽中的item，得到一个动态创建的节点，最后一个item不加i标签
     // 5. 把动态创建的节点渲染再lulu-bread标签中
     const items = this.$slots.default()
-    const dymanicItems = []
+    const dynamicItems = []
     items.forEach((item, i) => {
-      dymanicItems.push(item)
+      dynamicItems.push(item)
       if (i < items.length - 1) {
-        dymanicItems.push(h('i', { class: 'iconfont icon-angle-right' }))
+        dynamicItems.push(h('i', { class: 'iconfont icon-angle-right' }))
       }
     })
-    return h('div', { class: 'lulu-bread' }, dymanicItems)
+    return h('div', { class: 'lulu-bread' }, dynamicItems)
   },
 }
 </script>
@@ -46,11 +46,14 @@ export default {
       font-size: 22px;
     }
   }
-  i {
+  i{
     font-size: 20px;
     margin-left: 5px;
     margin-right: 5px;
     line-height: 35px;
+  }
+  i::before{
+    content: "\e612";
   }
 }
 @media (max-width: 500px) {
@@ -65,7 +68,7 @@ export default {
         transition: all 0.4s;
         display: inline-block;
         &:hover {
-          color: #11e0b3;
+          color:  #43c8ea;
         }
       }
       span {
@@ -73,7 +76,6 @@ export default {
       }
     }
     i {
-        color: #666;
       font-size: 14px;
       margin-left: 5px;
       margin-right: 5px;

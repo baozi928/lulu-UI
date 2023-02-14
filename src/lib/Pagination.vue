@@ -7,7 +7,7 @@
                 :class="{disabled: currentNo === 1}">上一页</button>
         <!-- 第一页 -->
         <button v-show="startEnd.start >= 2"
-                :go="1" >1</button>
+                :go="1"  >1</button>
         <!-- 省略号 -->
         <span class="[elli]"
               v-show="startEnd.start >= 3">...</span>

@@ -12,7 +12,7 @@ import getStarted from './markdown/get-started.md'
 import install from './markdown/install.md'
 import ProgressDemo from './components/ProgressDemo.vue'
 import TooltipDemo from './components/TooltipDemo.vue'
-import BreadcrumbDemo from './components/BreadDemo.vue'
+import BreadDemo from './components/BreadDemo.vue'
 import PaginationDemo from './components/PaginationDemo.vue'
 
 const history = createWebHashHistory();
@@ -35,7 +35,7 @@ export const router = createRouter({
                 { path: "tabs", component: TabsDemo },
                 { path: "progress", component: ProgressDemo },
                 { path: "tooltip", component: TooltipDemo },
-                { path: "breadcrumb", component: BreadcrumbDemo },
+                { path: "breadcrumb", component: BreadDemo },
                 { path: "pagination", component: PaginationDemo },
             ],
 
